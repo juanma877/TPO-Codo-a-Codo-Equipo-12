@@ -1,0 +1,47 @@
+/* Hoja de Estilos */
+
+h1{
+    color: #eee1b6;
+    font-family: 'Calibri';
+    margin:0 ; padding:0 ;
+    background-color: #75af92;
+    font-size: 300%;
+}
+
+h2{
+    color: #332929;
+    font-style: italic;
+    background-color: #18A383;
+}
+
+p{
+    color: rgb(66, 57, 46);
+    font-style: oblique;
+    font-family: 'Lucida Sans';
+}
+
+
+
+#texto {
+    color: white;
+    background-color: violet;
+    text-align: center;
+    margin-left: 10px;
+    }  
+
+form{
+        background-color: rgb(163, 179, 178);
+        border-radius: 3px;
+        color: #406d5c;
+        font-size: 0.8em;
+        padding: 10px;
+        margin: 15px;
+        width: 400px;
+    }
+
+
+.texto1{
+    font-family: "Galada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    }
