@@ -29,15 +29,8 @@ p{
     margin-left: 10px;
     }  
 
-form{
-        background-color: rgb(163, 179, 178);
-        border-radius: 3px;
-        color: #406d5c;
-        font-size: 0.8em;
-        padding: 10px;
-        margin: 15px;
-        width: 400px;
-    }
+
+
 
 
 .texto1{
@@ -45,3 +38,48 @@ form{
     font-weight: 400;
     font-style: normal;
     }
+
+/*--------FORMULARIO--------*/    
+
+
+
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 60px;
+    margin: auto;
+    margin-top: 90px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 20px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #627bb1;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+     
+    
+  .form-register .botons {
+    width: 100%;
+    background: #627bb1;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }

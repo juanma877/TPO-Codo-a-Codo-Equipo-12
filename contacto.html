@@ -25,43 +25,45 @@
         
      </header>   
 <main>
+    
     <hr>
-<H1 class="texto1">Estos son nuestros datos de contacto</H1>
+    <div class="form-register">
+    <H3>Estos son nuestros datos de contacto</H1>
     <h3>xxxx@xxxx.com.ar</h3>
     <h3>011-444-4444</h3>
-
+    </div>
     <hr>
-<section>
-    <h2>Envianos tu consulta</h2>
+    
+<section class="form-register">   
 
 <form action="">
+    <h4>Envianos tu consulta</h4>
     <table>
         <tr>
-            <td>   <label for="Nombre">Nombre:</label></td>
-            <td><input type="text" name="Nombre" id="nombre" placeholder="Ingrese su nombre completo"></td><br>
+            <td><label for="Nombre">Nombre:</label></td>
+            <td><input class= controls type="text" name="Nombre" id="nombre" placeholder="Ingrese su nombre completo"></td><br>
             
         </tr>
 
         <tr>
             <td><label for="apellido">Apellido:</label></td>
-            <td><input type="text" name="apellido" id="ape" placeholder="Ingrese su apellido"></td><br>
+            <td><input class=controls type="text" name="apellido" id="ape" placeholder="Ingrese su apellido"></td><br>
             
         </tr>
         
             <td><label for="Correo">Correo electronico:</label></td>
-            <td><input type="email" name="email" id="correo" placeholder="Ingrese su direccion de correo electronico"></td>
+            <td><input class=controls type="email" name="email" id="correo" placeholder="Ingrese su direccion de correo electronico"></td>
 
         <tr>
             <td>Consulta:</td>
-            <td><textarea name="Cosnulta" id="consulta" cols="30" rows="10"></textarea></td>
+            <td><textarea class= controls name="Cosnulta" id="consulta" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea></td>
         </tr>
 
-        <textarea name="comentario" rows="10" cols="40">Escribe tu comentario...</textarea>
+        
         <tr>
             <td></td>
             <td colspan="2">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
+                <input class="botons" type="submit" value="Enviar">
             </td>
         </tr>
     </table>
