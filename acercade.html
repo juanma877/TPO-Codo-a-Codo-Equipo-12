@@ -8,20 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Galada&family=Gluten:wght@100..900&family=Mynerve&family=Noto+Color+Emoji&family=Noto+Emoji:wght@300..700&family=Permanent+Marker&display=swap&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
 </head>
 <body>
   
     <header>
-        <nav>
-        <a href="index.html">Home</a>
-        <a href="acercade.html">Acerca de nosotros</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="otros.html">Otros</a>
-        </nav>
-        
-     </header>   
-
+        <div class="logo"><a href="index.html"><span class="material-symbols-outlined size-48">Music_cast</span>Melomanos!</a></div>
+    </header>
+    <nav class="nav-bar">        
+        <!-- Menu Desktop-->
+        <div class="nav-links desktop-nav">
+            <a href="acercade.html">Acerca de nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="otros.html">Otros</a>
+        </div>
+        <!-- Menu Mobile-->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-toggle-symbol">
+            <span class="material-symbols-outlined">Playlist_Play</span>
+        </label>
+        <div class="nav-links toggle-nav">
+            <a href="acercade.html">Acerca de nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="otros.html">Otros</a>
+        </div>
+    </nav>
 
 
 <main>
