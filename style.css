@@ -186,12 +186,9 @@ form {
         }
     }
 @media  (min-width: 761px) {
-    <script>
-        function clearInputField() {
-            document.getElementById("menu-toggle").reset();
-        }
-    </script>
-    }
+       
+            
+            }
 
 @media (max-width: 400px) {
         main{
