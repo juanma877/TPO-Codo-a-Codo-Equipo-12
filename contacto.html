@@ -46,47 +46,83 @@
     
 <section class="form-register">   
 
-<form action="">
-    <h4>Envianos tu consulta</h4>
-    <table>
-        <tr>
-            <td><label for="Nombre">Nombre:</label></td>
-            <td><input class= controls type="text" name="Nombre" id="nombre" placeholder="Ingrese su nombre completo"></td><br>
-            
-        </tr>
+    <h2>Estamos para ayudarte a encontrar esa melodia que cambio tu vida. </h2>
+    <H2>Formulario de Contacto</H2>
+    <h3>Puede completar este formulario detallando su consulta  para brindarle un mejor asesoramiento.</h3>
 
-        <tr>
-            <td><label for="apellido">Apellido:</label></td>
-            <td><input class=controls type="text" name="apellido" id="ape" placeholder="Ingrese su apellido"></td><br>
-            
-        </tr>
+<!-- Datos del solicitante -->
+
+
+ <form action="" id= "formregister" method= "get">
+     <div>
+         <label for = "firstName"> Nombre: </label> 
+         <input type="text" name="firstName">
+     </div>
+     <div>
+         <label for = "lastName"> Apellido: </label> 
+         <input type="text" name="lastName">
+     </div>   
+     <div>
+         <label for = "nroTelefono"> Número de Teléfono: </label> 
+         <input type="number" name="nroTelefono" >
+     </div>  
+     <div>
+         <label for = "localidad"> Localidad </label> 
+         <select name="localidad" id="localidad">
+             <option value="">Seleccionar Localidad</option>
+             <option value="CABA">Ciudad Autonoma de Bs AS</option>
+             <option value="PBA">Pcia de Buenos Aires</option>
+             <option value="OTR">Otras</option>
+         </select>
+     </div>
+     <div>
+         <label for = "email"> Correo electronico: </label> 
+         <input type="email" name="email" >
+     </div>  
+<!-- Detalle de la consulta -->
+     <div>
+         <p></p><h3>Tema de Consulta:</h3> </p>
         
-            <td><label for="Correo">Correo electronico:</label></td>
-            <td><input class=controls type="email" name="email" id="correo" placeholder="Ingrese su direccion de correo electronico"></td>
-
-        <tr>
-            <td>Consulta:</td>
-            <td><textarea class= controls name="Cosnulta" id="consulta" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea></td>
-        </tr>
-
-        
-        <tr>
-            <td></td>
-            <td colspan="2">
-                <input class="botons" type="submit" value="Enviar">
-            </td>
-        </tr>
-    </table>
-   
+         <label for="clasica">Musica Clasica</label>
+         <input type="checkbox">
+         <label for="instrumental">Orquestas Sinfonicas</label>
+         <input type="checkbox"> 
+         
+         <label for="solistas">Solistas</label>
+         <input type="checkbox"> 
+         <label for="grupos">Grupos</label>
+         <input type="checkbox">
+         
+         <label for="nacional">Musica Nacional</label>
+         <input type="checkbox">
+         <label for="extrajera">Musica Extranjera</label>
+         <input type="checkbox">
+     </div>
+     
+     <h3>Deja tu consulta: </h3>
+     <div>
+         <textarea name="tuConsulta" id="" cols="60" rows="10"></textarea>
+     </div>
+     <!-- Para indicar genero musical -->    
+    <section> 
+        <h3>Selecciona el genero musical  </h3>
+                
+            <select name="genero musical">
+                <option value="---"> Estilo </option>
+                <option value="clasica">Musica Clasica</option>
+                <option value="folk">Folclore</option>
+                <option value="instrumental">Instrumental</option>
+                <option value="rock">Rock</option>
+                <option value="latino">Latino</option>
+                <option value="otros">Otros</option>
+            </select> 
+     <input type="submit" value="Enviar">
+     <input type="reset" value="Borrar formulario"> 
     
-    <br>
-    <label for=""></label>
 
+    </section>
 
-
-</form>
-
-</section>
+ </form>
 
 
 </main>
