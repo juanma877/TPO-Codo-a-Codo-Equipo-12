@@ -38,9 +38,10 @@
     
     <hr>
     <div class="form-register">
-    <H3>Estos son nuestros datos de contacto</H1>
-    <h3>xxxx@xxxx.com.ar</h3>
+    <p><H3>Estos son nuestros datos de contacto</H3></p>
+    <h3>xxxx@xxxx.com.ar</h3> <br>
     <h3>011-444-4444</h3>
+    
     </div>
     <hr>
     
@@ -53,19 +54,22 @@
 <!-- Datos del solicitante -->
 
 
- <form action="" id= "formregister" method= "get">
+ <form action="" id= "formregister" method= "POST" onsubnit="validarformulario">
      <div>
-         <label for = "firstName"> Nombre: </label> 
-         <input type="text" name="firstName">
+        <label for = "firstName"> Nombre: </label>
+         <input type="text" name="firstName" id="firstName"> 
      </div>
+     <div class = "error" id = "error-firstName">  </div>
      <div>
          <label for = "lastName"> Apellido: </label> 
-         <input type="text" name="lastName">
+         <input type="text" name="lastName" id= "lastName">
      </div>   
+     <div class = "error" id = "error-lastName">  </div>
      <div>
          <label for = "nroTelefono"> Número de Teléfono: </label> 
-         <input type="number" name="nroTelefono" >
+         <input type="number" name="nroTelefono" id= "nroTelefono">
      </div>  
+     <div class = "error" id = "error-telefono">  </div>
      <div>
          <label for = "localidad"> Localidad </label> 
          <select name="localidad" id="localidad">
@@ -77,58 +81,49 @@
      </div>
      <div>
          <label for = "email"> Correo electronico: </label> 
-         <input type="email" name="email" >
+         <input type="email" name="email" id="email"">
      </div>  
+     <div class = "email" id = "error-email">  </div>
 <!-- Detalle de la consulta -->
-     <div>
-         <p></p><h3>Tema de Consulta:</h3> </p>
-        
-         <label for="clasica">Musica Clasica</label>
-         <input type="checkbox">
-         <label for="instrumental">Orquestas Sinfonicas</label>
-         <input type="checkbox"> 
-         
-         <label for="solistas">Solistas</label>
-         <input type="checkbox"> 
-         <label for="grupos">Grupos</label>
-         <input type="checkbox">
-         
-         <label for="nacional">Musica Nacional</label>
-         <input type="checkbox">
-         <label for="extrajera">Musica Extranjera</label>
-         <input type="checkbox">
-     </div>
-     
-     <h3>Deja tu consulta: </h3>
-     <div>
-         <textarea name="tuConsulta" id="" cols="60" rows="10"></textarea>
-     </div>
+ 
      <!-- Para indicar genero musical -->    
-    <section> 
+     <section> 
         <h3>Selecciona el genero musical  </h3>
                 
             <select name="genero musical">
                 <option value="---"> Estilo </option>
-                <option value="clasica">Musica Clasica</option>
+                <option value="clasica">Clasica</option>
                 <option value="folk">Folclore</option>
                 <option value="instrumental">Instrumental</option>
                 <option value="rock">Rock</option>
                 <option value="latino">Latino</option>
                 <option value="otros">Otros</option>
             </select> 
-     <input type="submit" value="Enviar">
-     <input type="reset" value="Borrar formulario"> 
-    
+      
+    </section> <br>     
+     <h3>Deja tu consulta: </h3>
+     <div>
+         <textarea name="tuConsulta" id="" cols="60" rows="10" placeholder="Ingrese su consulta..."></textarea>
+     </div>
+     <div>
+        <p></p><h3>Quiero recibir mi respuesta por:  </h3> </p> 
+       
+        <label for="email" > email</label>
+        <input type="checkbox"> 
+        <label for="whatsapp">Whatsapp</label>
+        <input type="checkbox"> 
+        
+    </div> <br>
 
-    </section>
-
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar formulario"> 
  </form>
-
+<script src="form.js"></script>
 
 </main>
 <br><br><br>
 <hr>
-<footer>Grupo FSP2024 Derechos reservados  por Copyright 2024</footer>
+<footer>Grupo 13 FSP2024 Derechos reservados  por Copyright 2024</footer>
 
 </body>
 </html>
