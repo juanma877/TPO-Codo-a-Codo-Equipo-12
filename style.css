@@ -3,6 +3,13 @@
     /*background-color: aqua;*/
     margin: 0;
 }
+
+body{
+    background-image: url(/Assets/pexels-ellis-1389429.jpg);
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
+
 header{
     height: 70px;
     top:0;
@@ -29,15 +36,19 @@ div{
 h1{
     color: #eee1b6;
     font-family: 'Calibri';
-    margin:0 ; padding:0 ;
+    margin:0 ; 
+    padding:0 ;
     background-color: #75af92;
     font-size: 300%;
+    align-content: center;
+    
 }
 
 h2{
     color: #332929;
     font-style: italic;
     background-color: #18A383;
+    padding: 0 20px;
 }
 
 p{
@@ -77,11 +88,25 @@ form {
     font-family: "Galada", cursive;
     font-weight: 400;
     font-style: normal;
+    padding: 0 20px;
+    
     }
 
 /*<<<<<<< HEAD*/
-/*--------FORMULARIO--------*/    
 
+/*--------FORMULARIO--------*/    
+.contacto {
+    flex-direction: column;
+    width: 400px;
+    background: #24303c;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 20px #000;
+  }
 
 
 .form-register {
@@ -89,7 +114,7 @@ form {
     background: #24303c;
     padding: 60px;
     margin: auto;
-    margin-top: 90px;
+    margin-top: 10px;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
@@ -163,6 +188,8 @@ form {
     color: black;
 }
 
+
+/* Este font usa wght como parametro no es weight*/
 .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
@@ -171,24 +198,23 @@ form {
     'opsz' 24
   }
 
-  /*span {
-}*/
+
 
   span.size-48 {
     font-size: 48px;
     font-variation-settings: 'OPSZ' 48;
     animation: pulse 3s infinite;
-  }
+   }
 
   @keyframes pulse {
     0% {
-      font-variation-settings: 'weight' 100;
+      font-variation-settings: 'wght' 100;
     }
     50% {
-      font-variation-settings: 'weight' 700;
+      font-variation-settings: 'wght' 700;
     }
     100% {
-      font-variation-settings: 'weight' 100;
+      font-variation-settings: 'wght' 100;
     }
   }
 
@@ -219,6 +245,12 @@ form {
     color: black;
     width: 100%;
 
+  }
+
+  footer{
+    /*background-color: #49846d;*/
+    background-color: #406d5c;
+    padding: 0 20px;
   }
 
 @media (max-width:760px) and (min-width:401px) {
@@ -261,6 +293,7 @@ form {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
+          padding: 20px;
 
           
         }
@@ -300,9 +333,9 @@ form {
 
 
         .carrusel-conteiner{
-          overflow-x: auto;
-          width: 100%;
-          padding: 20px 0;
+          overflow-x: scroll;
+          width: auto;
+          margin: 20px ;
           
         }
         .carrusel{
