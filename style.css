@@ -1,8 +1,9 @@
 /* Hoja de Estilos */
 *{
-    /*background-color: aqua;*/
-    margin: 0;
+        margin: 0;
+        
 }
+
 header{
     height: 70px;
     top:0;
@@ -10,27 +11,40 @@ header{
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
-    background-color: #406d5c;
+    /*background-color: #406d5c;*/
     align-content: center;
-    
+   
 
+    
 }
 
 header a{
     text-decoration: none;
     color: black;
 }
+
+main{
+    top: 70px;
+}
+
 div{
     display: flex;
     align-content: center;
     /*flex-wrap: wrap;*/
 }
 
+body{
+    background-image: url(/Assets/pexels-ellis-1389429.jpg);
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
+
+
 h1{
     color: #eee1b6;
     font-family: 'Calibri';
     margin:0 ; padding:0 ;
-    background-color: #75af92;
+    /*background-color: #75af92;*/
     font-size: 300%;
 }
 
@@ -122,10 +136,6 @@ form {
     'opsz' 24
   }
 
-  span {
-    
-     }
-
   span.size-48 {
     font-size: 48px;
     font-variation-settings: 'OPSZ' 48;
@@ -150,7 +160,7 @@ form {
 
   .menu-toggle-symbol{
     display: none;
-    margin 5px;
+    margin: 2px;
     top: 50px;
    
   }
@@ -186,9 +196,11 @@ form {
         }
     }
 @media  (min-width: 761px) {
-       
-            
-            }
+        main{
+            border-style: blue solid;
+            margin: 20px;
+        }         
+    }
 
 @media (max-width: 400px) {
         main{
