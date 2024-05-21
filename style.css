@@ -38,6 +38,7 @@ h2{
     color: #332929;
     font-style: italic;
     background-color: #18A383;
+    padding: 0 20px;
 }
 
 p{
@@ -77,12 +78,13 @@ form {
     font-family: "Galada", cursive;
     font-weight: 400;
     font-style: normal;
+    padding: 5px 20px;
+    
     }
 
 /*<<<<<<< HEAD*/
+
 /*--------FORMULARIO--------*/    
-
-
 
 .form-register {
     width: 400px;
@@ -163,6 +165,8 @@ form {
     color: black;
 }
 
+
+/* Este font usa wght como parametro no es weight*/
 .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
@@ -171,24 +175,23 @@ form {
     'opsz' 24
   }
 
-  /*span {
-}*/
+
 
   span.size-48 {
     font-size: 48px;
     font-variation-settings: 'OPSZ' 48;
     animation: pulse 3s infinite;
-  }
+   }
 
   @keyframes pulse {
     0% {
-      font-variation-settings: 'weight' 100;
+      font-variation-settings: 'wght' 100;
     }
     50% {
-      font-variation-settings: 'weight' 700;
+      font-variation-settings: 'wght' 700;
     }
     100% {
-      font-variation-settings: 'weight' 100;
+      font-variation-settings: 'wght' 100;
     }
   }
 
@@ -261,6 +264,7 @@ form {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
+          padding: 20px;
 
           
         }
@@ -300,9 +304,9 @@ form {
 
 
         .carrusel-conteiner{
-          overflow-x: auto;
-          width: 100%;
-          padding: 20px 0;
+          overflow-x: scroll;
+          width: auto;
+          margin: 20px ;
           
         }
         .carrusel{
