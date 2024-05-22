@@ -251,6 +251,10 @@ form {
     /*background-color: #49846d;*/
     background-color: #406d5c;
     padding: 0 20px;
+    position: fixed;
+    display: block;
+    width: 100%;
+    bottom: 0%;
   }
 
 @media (max-width:760px) and (min-width:401px) {
