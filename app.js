@@ -9,77 +9,85 @@ window.addEventListener('resize', unCheckMenu );
 
 
 /* Validacion del formulario */
-function validarformulario()¨{
-    valor=dicument.getElementById("telefono").value;
-    if( isNaN(valor) ) 
+function validarFormulario() {
+    valor=document.getElementById("nroTelefono").value;
+    
+        if( isNaN(valor) ) 
         {
-            document.getElementById('mensaje').innerHTML = "La edad debe ser un numero!";
-            limpiar();
+            document.getElementById('error-nroTelefono').innerHTML = "Ingrese numeros!";
+            /*limpiar();*/
+            alert("Ingrese Numeros");
             return false;
         }
         else    
         {
-            if( valor < 0 || valor > 130 || valor ==="") 
+            if( valor < 0 || valor > 9999999999 || valor ==="") 
             {
-                document.getElementById('mensaje').innerHTML = "La edad debe estar entre 0 y 130 años!";
-                limpiar();
+                document.getElementById('error-nroTelefono').innerHTML = "Dato incorrecto!";
+                /*limpiar();*/
+                alert("Ingrese Numeros");
                 return false;
             }
         }
-        return true;          
-    }
+       /* return true;          
+    /*}
     
-    function validacion() 
-    {
-        valor = document.getElementById("nombre").value;
+    function validacion() {*/
+    valor = document.getElementById("firstName").value;
+    document.getElementById('error-firstName').innerHTML = "";
         
         if( valor == null || valor.length == 0) 
         {
-            
-            document.getElementById('mensaje').innerHTML = "Tenes que completar el Nombre!";
-            elemento = document.getElementById('nombre');
+            document.getElementById('error-firstName').innerHTML = "Tenes que completar el Nombre!";
+            elemento = document.getElementById('firstName');
             elemento.focus();
             
             return false;
         }
+        console.log("Nombre",firstName.value,"Apellido",lastName.value,"Tel",nroTelefono.value);
+        alert("Formulario Enviado!");
         
-        return true;  
+        /*return true;  */
+        
+    }
+
+    
 
 /* tomado del video 10 cAC pero NO esta funcionando 
 const firstName = document.querySelector("#firstName");
 const lastName = document.querySelector("#lastName");
-const telefono = document.querySelector("#telefono");
+const nroTelefono = document.querySelector("#ntoTelefono");
 const email = document.querySelector("#email");
 
-if(firstName && lastName && telefono && enail)¨{
-    formRegister.addEventListener("submit" validarformulario)
-} else {
+if(firstName && lastName && nroTelefono && email) {
+    formRegister.addEventListener('submit', validarFormulario);
+    } else {
     console.log("error no se puede enviar")
-}
+    }
 
-function validarformulario(event){
+function validarFormulario(event) {
     event.preventDefault();
 
     let validation = true;
 
-    if (firstName.value ===""){
+    if (firstName.value ==="") {
         firstName.classList.add("error");
         errorfirstName.textContent = "El nombre no puede estar vacio"
         validation = false
-    }else ¨[
+    } else {
         firstName.classList.remove("error");
         errorfirstName.textContent = ""
-    ]
-}
+    }
+    }
 
-    if(validation){
+    if (validation) {
     console.log ("Datos validos")
     } else {
     console.log("error no se puede enviar")
-}
+    }
     firstName.addEventListener("input",()=>
         if( firstName.value != "")
     
     
     )
-*/
+*/ 

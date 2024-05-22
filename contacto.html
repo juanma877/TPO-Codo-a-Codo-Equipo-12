@@ -2,13 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Assets/4 fantasticos.ico">
     <title>contacto</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Galada&family=Gluten:wght@100..900&family=Mynerve&family=Noto+Color+Emoji&family=Noto+Emoji:wght@300..700&family=Permanent+Marker&display=swap&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <script src="app.js"></script>
 </head>
 <body>
   
@@ -54,22 +55,22 @@
 <!-- Datos del solicitante -->
 
 
- <form action="" id= "formregister" method= "POST" onsubnit="validarformulario">
+ <form  id= 'formRegister' onsubmit="return validarFormulario();">
      <div>
         <label for = "firstName"> Nombre: </label>
          <input type="text" name="firstName" id="firstName"> 
-     </div>
-     <div class = "error" id = "error-firstName">  </div>
+     <label class = "error" id = "error-firstName"> </label> 
+    </div>
      <div>
          <label for = "lastName"> Apellido: </label> 
          <input type="text" name="lastName" id= "lastName">
-     </div>   
-     <div class = "error" id = "error-lastName">  </div>
+     <label class = "error" id = "error-lastName"> </label> 
+    </div>
      <div>
          <label for = "nroTelefono"> Número de Teléfono: </label> 
          <input type="number" name="nroTelefono" id= "nroTelefono">
-     </div>  
-     <div class = "error" id = "error-telefono">  </div>
+     <label class = "error" id = "error-nroTelefono">  </label>
+     </div>
      <div>
          <label for = "localidad"> Localidad </label> 
          <select name="localidad" id="localidad">
@@ -81,17 +82,17 @@
      </div>
      <div>
          <label for = "email"> Correo electronico: </label> 
-         <input type="email" name="email" id="email"">
-     </div>  
-     <div class = "email" id = "error-email">  </div>
+         <input type="email" name="email" id="email" autocomplete="email">
+     <label class = "error" id = "error-email">  </label>
+    </div>
 <!-- Detalle de la consulta -->
  
      <!-- Para indicar genero musical -->    
      <section> 
         <h3>Selecciona el genero musical  </h3>
                 
-            <select name="genero musical">
-                <option value="---"> Estilo </option>
+            <select name="genMusical" id = "genMusical">
+                <option value=""> Estilo </option>
                 <option value="clasica">Clasica</option>
                 <option value="folk">Folclore</option>
                 <option value="instrumental">Instrumental</option>
@@ -103,22 +104,22 @@
     </section> <br>     
      <h3>Deja tu consulta: </h3>
      <div>
-         <textarea name="tuConsulta" id="" cols="60" rows="10" placeholder="Ingrese su consulta..."></textarea>
+         <textarea name="tuConsulta" id="tuConsulta" cols="60" rows="10" placeholder="Ingrese su consulta..."></textarea>
      </div>
      <div>
         <p></p><h3>Quiero recibir mi respuesta por:  </h3> </p> 
        
-        <label for="email" > email</label>
-        <input type="checkbox"> 
-        <label for="whatsapp">Whatsapp</label>
-        <input type="checkbox"> 
+        <label for="byEmail">email</label>
+        <input type="checkbox" id="byEmail" name="byEmail"> 
+        <label for="byWhatsapp">Whatsapp</label>
+        <input type="checkbox" id="byWhatsapp" name="byWhatsapp"> 
         
     </div> <br>
 
     <input type="submit" value="Enviar">
     <input type="reset" value="Borrar formulario"> 
  </form>
-<script src="form.js"></script>
+
 
 </main>
 <br><br><br>

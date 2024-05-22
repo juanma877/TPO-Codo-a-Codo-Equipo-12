@@ -20,6 +20,7 @@ header a{
     text-decoration: none;
     color: black;
 }
+
 div{
     display: flex;
     align-content: center;
@@ -49,6 +50,14 @@ p{
 a{
     align-content: center;
 }
+
+.error{
+    color: red;
+    font-weight: 700;
+    
+    float: right;
+}
+
 
 
 #texto {
