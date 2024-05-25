@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Galada&family=Gluten:wght@100..900&family=Mynerve&family=Noto+Color+Emoji&family=Noto+Emoji:wght@300..700&family=Permanent+Marker&display=swap&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <script src="app.js"></script>
 </head>
 <body>
   
@@ -35,70 +36,95 @@
     </nav>
 
 <main>
-    <h1 class="texto1">Contacto</h1>
-
-    <aside>
-    <div class="contacto"> 
-    <h3>Estos son nuestros datos de contacto</h3>
-    <br>
-        <ul>
-        <li>email: xxxx@xxxx.com.ar</li>
-        <li>Tel: 011-444-4444</li>
-        </ul>
-    <br>
+    
+    <hr>
+    <div class="form-register">
+    <p><H3>Estos son nuestros datos de contacto</H3></p>
+    <h3>xxxx@xxxx.com.ar<br>011-444-4444</h3> 
+    
+    
     </div>
-    <br>
-    </aside>
+    <hr>
     
 <section class="form-register">   
 
-<form action="">
-    <h4>Envianos tu consulta</h4>
-    <table>
-        <tr>
-            <td><label for="Nombre">Nombre:</label></td>
-            <td><input class= controls type="text" name="Nombre" id="nombre" placeholder="Ingrese su nombre completo"></td><br>
-            
-        </tr>
+    <h2>Estamos para ayudarte a encontrar esa melodia que cambio tu vida. </h2>
+    <H2>Formulario de Contacto</H2>
+    <h3>Puede completar este formulario detallando su consulta  para brindarle un mejor asesoramiento.</h3>
 
-        <tr>
-            <td><label for="apellido">Apellido:</label></td>
-            <td><input class=controls type="text" name="apellido" id="ape" placeholder="Ingrese su apellido"></td><br>
-            
-        </tr>
+<!-- Datos del solicitante -->
+
+
+ <form  id= 'formRegister' onsubmit="return validarFormulario();">
+     <div>
+        <label for = "firstName"> Nombre: </label>
+         <input type="text" name="firstName" id="firstName"> 
+     <label class = "error" id = "error-firstName"> </label> 
+    </div>
+     <div>
+         <label for = "lastName"> Apellido: </label> 
+         <input type="text" name="lastName" id= "lastName">
+     <label class = "error" id = "error-lastName"> </label> 
+    </div>
+     <div>
+         <label for = "nroTelefono"> Número de Teléfono: </label> 
+         <input type="number" name="nroTelefono" id= "nroTelefono">
+     <label class = "error" id = "error-nroTelefono">  </label>
+     </div>
+     <div>
+         <label for = "localidad"> Localidad </label> 
+         <select name="localidad" id="localidad">
+             <option value="">Seleccionar Localidad</option>
+             <option value="CABA">Ciudad Autonoma de Bs AS</option>
+             <option value="PBA">Pcia de Buenos Aires</option>
+             <option value="OTR">Otras</option>
+         </select>
+     </div>
+     <div>
+         <label for = "email"> Correo electronico: </label> 
+         <input type="email" name="email" id="email" autocomplete="email">
+     <label class = "error" id = "error-email">  </label>
+    </div>
+<!-- Detalle de la consulta -->
+ 
+     <!-- Para indicar genero musical -->    
+     <section> 
+        <h3>Selecciona el genero musical  </h3>
+                
+            <select name="genMusical" id = "genMusical">
+                <option value=""> Estilo </option>
+                <option value="clasica">Clasica</option>
+                <option value="folk">Folclore</option>
+                <option value="instrumental">Instrumental</option>
+                <option value="rock">Rock</option>
+                <option value="latino">Latino</option>
+                <option value="otros">Otros</option>
+            </select> 
+      
+    </section> <br>     
+     <h3>Deja tu consulta: </h3>
+     <div>
+         <textarea name="tuConsulta" id="tuConsulta" cols="60" rows="10" placeholder="Ingrese su consulta..."></textarea>
+     </div>
+     <div>
+        <p></p><h3>Quiero recibir mi respuesta por:  </h3> </p> 
+       
+        <label for="byEmail">email</label>
+        <input type="checkbox" id="byEmail" name="byEmail"> 
+        <label for="byWhatsapp">Whatsapp</label>
+        <input type="checkbox" id="byWhatsapp" name="byWhatsapp"> 
         
-            <td><label for="Correo">Correo electronico:</label></td>
-            <td><input class=controls type="email" name="email" id="correo" placeholder="Ingrese su direccion de correo electronico"></td>
+    </div> <br>
 
-        <tr>
-            <td>Consulta:</td>
-            <td><textarea class= controls name="Consulta" id="consulta" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea></td>
-        </tr>
-
-        
-        <tr>
-            <td></td>
-            <td colspan="2">
-                <input class="botons" type="submit" value="Enviar">
-            </td>
-        </tr>
-    </table>
-   
-    
-    <br>
-    <label for=""></label>
-
-
-
-</form>
-
-</section>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar formulario"> 
+ </form>
 
 
 </main>
 <br><br><br>
-
-<footer>Grupo FSP2024 Derechos reservados  por Copyright 2024</footer>
+<hr>
+<footer>Grupo 13 FSP2024 Derechos reservados  por Copyright 2024</footer>
 
 </body>
 </html>
