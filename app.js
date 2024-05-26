@@ -44,7 +44,7 @@ function validarFormulario() {
             
             return false;
         }
-        console.log("Nombre",firstName.value,"Apellido",lastName.value,"Tel",nroTelefono.value);
+        console.log("Nombre",firstName.value,"Apellido",lastName.value,"Tel",nroTelefono.value,"Genero",genMusical.value);
         alert("Formulario Enviado!");
         
         /*return true;  */
