@@ -5,6 +5,7 @@ function unCheckMenu() {
 }
 
 window.addEventListener('resize', unCheckMenu );
+
 /* Function para desactivar check del menu-toggle */
 
 // Fetch de api
