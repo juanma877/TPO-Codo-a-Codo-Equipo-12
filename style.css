@@ -62,6 +62,15 @@ a{
     align-content: center;
 }
 
+.error{
+  color: red;
+  font-weight: 700;
+  
+  float: right;
+}
+
+
+
 
 #texto {
     color: white;
