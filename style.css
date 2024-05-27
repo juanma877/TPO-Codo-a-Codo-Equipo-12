@@ -364,6 +364,12 @@ form {
           height: auto; 
         }
         
+        .card img:hover {
+          transform: scale(1.25,1.25);
+          transition: 2s;
+
+        }
+
         .titulo{
           background-color: #24303c;
           padding: 10px; 
