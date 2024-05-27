@@ -120,7 +120,7 @@ form {
     background: #24303c;
     padding: 20px;
     margin: 20px;
-    margin-top: 10px;
+  
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
@@ -128,13 +128,24 @@ form {
   
   }
 
-  .redes{
+.redes{
     grid-column-start: 2;
     grid-row-start: 2;
     flex-direction: column;
     background: #24303c;
     padding: 20px;
     margin: 20px;
+    color: white;
+    border-radius: 4px;
+    font-family: 'calibri';
+    box-shadow: 7px 13px 20px #000;
+  }
+
+  .redes i {
+    font-size: 30px;
+    text-align: left;
+    margin: 5px;
+    
   }
 
 .formRegister {
@@ -353,6 +364,18 @@ form {
           height: auto; 
         }
         
+        .card img:hover {
+          transform: scale(1.25,1.25);
+          transition: 2s;
+
+        }
+
+        .card2 img:hover {
+          transform: scale(1.25,1.25);
+          transition: 2s;
+
+        }
+
         .titulo{
           background-color: #24303c;
           padding: 10px; 
@@ -424,6 +447,7 @@ form {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        flex-wrap: wrap;
       }
 
       .containerNos div{
@@ -431,4 +455,9 @@ form {
         margin: 20px;
         align-items: center;
         gap: 10px;
+        font-family: "Permanent Marker", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        color: aliceblue;
       }
