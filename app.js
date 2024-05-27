@@ -63,9 +63,9 @@ fetch('https://audius-discovery-4.theblueprint.xyz/v1/tracks/trending')
 
     /* Validacion del formulario */
     function validarFormulario() {
-    valor=document.getElementById("nroTelefono").value;
+        valor1 = document.getElementById('nroTelefono').value;
     
-        if( isNaN(valor) ) 
+        if( isNaN(valor1) ) 
         {
             document.getElementById('error-nroTelefono').innerHTML = "Ingrese numeros!";
             /*limpiar();*/
@@ -74,30 +74,38 @@ fetch('https://audius-discovery-4.theblueprint.xyz/v1/tracks/trending')
         }
         else    
         {
-            if( valor < 0 || valor > 9999999999 || valor ==="") 
+            if( valor1 < 0 || valor1 > 9999999999 || valor1 ==="") 
             {
-                document.getElementById('error-nroTelefono').innerHTML = "Dato incorrecto!";
-                /*limpiar();*/
-                alert("Ingrese Numeros");
+                document.getElementById('error-nroTelefono').innerHTML = "Ingresa un nro de Telefono!";
+                elemento = document.getElementById('nroTelefono');
+                elemento.focus();
+                /*alert("Ingrese Numeros");*/
+            
                 return false;
+            
+            }else {
+                document.getElementById('error-nroTelefono').innerHTML = "";
             }
         }
-       /* return true;          
-    /*}
-    
-    function validacion() {*/
-    valor = document.getElementById("firstName").value;
-    document.getElementById('error-firstName').innerHTML = "";
         
-        if( valor == null || valor.length == 0) 
+      
+        valor2 = document.getElementById('firstName').value;
+                
+        if( valor2 == null || valor2.length == 0) 
         {
             document.getElementById('error-firstName').innerHTML = "Tenes que completar el Nombre!";
             elemento = document.getElementById('firstName');
             elemento.focus();
             
             return false;
+        }else {
+            document.getElementById('error-firstName').innerHTML = "";
         }
+
+        
         console.log("Nombre",firstName.value,"Apellido",lastName.value,"Tel",nroTelefono.value,"Genero",genMusical.value);
+        
+        console.log("Datos Enviados")
         alert("Formulario Enviado!");
         
         /*return true;  */
