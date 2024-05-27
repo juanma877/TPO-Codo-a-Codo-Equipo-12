@@ -393,3 +393,16 @@ form {
             width: calc(100% - 20px);
           }
         }
+
+      .containerNos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+
+      .containerNos div{
+        flex-direction: column;
+        margin: 20px;
+        align-items: center;
+        gap: 10px;
+      }
