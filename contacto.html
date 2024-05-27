@@ -36,60 +36,57 @@
     </nav>
 
 <main>
+
+
+<div class="containerContacto">
     
-    <div class="form-register">
-    <p><H3>Estos son nuestros datos de contacto</H3></p>
-    <h3>xxxx@xxxx.com.ar</h3> <br>
-    <h3>011-444-4444</h3>
+ <div class="formRegister">
+        <h2>Formulario de Contacto</h2>
+        <br>
+        <h3>Estamos para ayudarte a encontrar esa melodia que cambio tu vida. </h3>
+
+        <h3>Puede completar este formulario detallando su consulta  para brindarle un mejor asesoramiento.</h3>
+     
+     <!-- Datos del solicitante -->
     
-    </div>
-    
-<section class="form-register">   
+     <form  id= 'formRegister' onsubmit="return validarFormulario();" class="formRegister">
+         <div>
+            <label for = "firstName"> Nombre: </label>
+            <input type="text" name="firstName" id="firstName"> 
+            <label class = "error" id = "error-firstName"> </label> 
+         </div>
+         <div>
+            <label for = "lastName"> Apellido: </label> 
+            <input type="text" name="lastName" id= "lastName">
+            <label class = "error" id = "error-lastName"> </label> 
+         </div>
 
-    <h2>Formulario de Contacto</h2>
-    <br>
-    <h3>Estamos para ayudarte a encontrar esa melodia que cambio tu vida. </h3>
-    <br>   
-    <h3>Puede completar este formulario detallando su consulta  para brindarle un mejor asesoramiento.</h3>
-
- <!-- Datos del solicitante -->
-
-
- <form  id= 'formRegister' onsubmit="return validarFormulario();">
-     <div>
-        <label for = "firstName"> Nombre: </label>
-         <input type="text" name="firstName" id="firstName"> 
-     <label class = "error" id = "error-firstName"> </label> 
-    </div>
-     <div>
-         <label for = "lastName"> Apellido: </label> 
-         <input type="text" name="lastName" id= "lastName">
-     <label class = "error" id = "error-lastName"> </label> 
-    </div>
-     <div>
+         <div>
          <label for = "nroTelefono"> Número de Teléfono: </label> 
          <input type="number" name="nroTelefono" id= "nroTelefono">
-     <label class = "error" id = "error-nroTelefono">  </label>
-     </div>
-     <div>
-         <label for = "localidad"> Localidad </label> 
-         <select name="localidad" id="localidad">
+         <label class = "error" id = "error-nroTelefono">  </label>
+         </div>
+
+         <div>
+             <label for = "localidad"> Localidad </label> 
+             <select name="localidad" id="localidad">
              <option value="">Seleccionar Localidad</option>
              <option value="CABA">Ciudad Autonoma de Bs AS</option>
              <option value="PBA">Pcia de Buenos Aires</option>
              <option value="OTR">Otras</option>
-         </select>
-     </div>
-     <div>
+             </select>
+             </div>
+
+            <div>
          <label for = "email"> Correo electronico: </label> 
          <input type="email" name="email" id="email" autocomplete="email">
-     <label class = "error" id = "error-email">  </label>
-    </div>
- <!-- Detalle de la consulta -->
- 
-     <!-- Para indicar genero musical -->    
-     <section> 
-        <h3>Selecciona el genero musical  </h3>
+         <label class = "error" id = "error-email">  </label>
+         </div>
+         <!-- Detalle de la consulta --> 
+     
+         <h3>Selecciona el genero musical  </h3>
+
+            <!-- Para indicar genero musical -->    
                 
             <select name="genMusical" id = "genMusical">
                 <option value=""> Estilo </option>
@@ -100,27 +97,44 @@
                 <option value="latino">Latino</option>
                 <option value="otros">Otros</option>
             </select> 
-      
-    </section> <br>     
-     <h3>Deja tu consulta: </h3>
-     <div>
-         <textarea name="tuConsulta" id="tuConsulta" cols="60" rows="10" placeholder="Ingrese su consulta..."></textarea>
-     </div>
-     <div>
-        <p></p><h3>Quiero recibir mi respuesta por:  </h3> </p> 
+     
+          <br><br>     
+          
+         <div>
+         <textarea name="tuConsulta" id="tuConsulta" cols="60" rows="5" placeholder="Ingrese su consulta..."></textarea>
+         </div>
+         <br>
+         <div>
+         <h3>Quiero recibir mi respuesta por:</h3> 
        
-        <label for="byEmail">email</label>
-        <input type="checkbox" id="byEmail" name="byEmail"> 
-        <label for="byWhatsapp">Whatsapp</label>
-        <input type="checkbox" id="byWhatsapp" name="byWhatsapp"> 
+         <label for="byEmail">email</label>
+         <input type="checkbox" id="byEmail" name="byEmail"> 
+         <label for="byWhatsapp">Whatsapp</label>
+         <input type="checkbox" id="byWhatsapp" name="byWhatsapp"> 
         
-    </div> <br>
+         </div> 
+         <br>
 
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Borrar formulario"> 
- </form>
+         <input type="submit" value="Enviar" class="botones">
+         <input type="reset" value="Borrar formulario" class="botones"> 
+        
+     </form>
+    </div> 
+        <div class="contacto">
+        <p><H3>Estos son nuestros datos de contacto</H3></p>
+        <br>
+        <ul>
+        <li><h3>Correo: xxxx@xxxx.com.ar</h3></li>
+         <br>
+        <li><h3>Tel: 011-444-4444</h3></li>
+        </ul>
+        </div>
+       <div class="redes">
 
-</section>
+       </div>
+</div>
+<br>
+
 </main>
 <br><br><br>
 

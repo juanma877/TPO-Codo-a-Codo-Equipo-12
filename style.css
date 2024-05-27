@@ -79,7 +79,6 @@ a{
     margin-left: 10px;
     }  
 
-/*<<<<<<< HEAD*/
 
 
 /*=======*/
@@ -102,36 +101,61 @@ form {
     
     }
 
-/*<<<<<<< HEAD*/
 
 /*--------FORMULARIO--------*/    
+.containerContacto {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  grid-template-rows:  50% 50%;
+  margin: 20px;
+ 
+}
+
 .contacto {
+    grid-column-start: 2;
+    grid-row-start: 1;
     flex-direction: column;
-    width: 400px;
+    /*width: 400px;
+    */
     background: #24303c;
     padding: 20px;
-    margin: auto;
+    margin: 20px;
     margin-top: 10px;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 20px #000;
+  
   }
 
-
-.form-register {
-    width: 400px;
+  .redes{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    flex-direction: column;
     background: #24303c;
-    padding: 60px;
-    margin: auto;
+    padding: 20px;
+    margin: 20px;
+  }
+
+.formRegister {
+    min-width: 80%;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    flex-direction: column;
+    /*width: 400px;*/
+    background: #24303c;
+    padding: 20px;
+    
     margin-top: 10px;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 20px #000;
+   
   }
   
-  .form-register h4 {
+  .formRegister h4 {
     font-size: 22px;
     margin-bottom: 5px;
   }
@@ -148,14 +172,16 @@ form {
     color: white;
   }       
     
-  .form-register .botons {
-    width: 100%;
+  .formRegister .botones {
+    flex-direction: row;
+    text-align: center;
+    width: 45%;
     background: #627bb1;
     border: none;
     padding: 12px;
     color: white;
-    margin: 16px 0;
-    font-size: 16px;
+    margin: 5px 15px;
+    font-size: 12px;
   }
 /*=======*/
 .texto2{
